@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/RLX8U9Odqy1
+-->
+
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="px-4 lg:px-6 h-14 flex items-center bg-background">
+    <a class="flex items-center justify-center" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6 text-primary"
+      >
+        <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
+      </svg>
+      <span class="sr-only">John Doe's Portfolio</span>
+    </a>
+    <nav class="ml-auto flex gap-4 sm:gap-6">
+      <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+        Work
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+        About
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+        Contact
+      </a>
+    </nav>
+    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-auto lg:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+      >
+        <line x1="4" x2="20" y1="12" y2="12"></line>
+        <line x1="4" x2="20" y1="6" y2="6"></line>
+        <line x1="4" x2="20" y1="18" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+  <main class="flex-1">
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-primary">
+      <div class="container px-4 md:px-6 grid gap-8 md:grid-cols-2 items-center">
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold tracking-tighter text-primary-foreground sm:text-5xl md:text-6xl">
+            Hi, I'm John Doe
+          </h1>
+          <p class="text-lg text-primary-foreground">
+            I'm a software developer and designer with a passion for creating beautiful and functional digital
+            experiences.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              href="#"
+            >
+              View Work
+            </a>
+            <a
+              class="inline-flex h-10 items-center justify-center rounded-md border border-primary-foreground bg-primary px-6 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              href="#"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="/placeholder.svg"
+            width="500"
+            height="500"
+            alt="John Doe"
+            class="mx-auto aspect-square overflow-hidden rounded-full object-cover"
+          />
+          <div class="absolute bottom-0 right-0 bg-primary-foreground rounded-full w-12 h-12 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6 text-primary"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="space-y-4 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
+          <p class="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+            Check out some of my recent work and see how I can help bring your ideas to life.
+          </p>
+        </div>
+        <div class="grid gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group relative overflow-hidden rounded-lg">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 1"
+              class="aspect-video object-cover transition-all group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-primary/80 flex flex-col items-start justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <h3 class="text-2xl font-bold text-primary-foreground">Project 1</h3>
+              <p class="text-primary-foreground">Lorem ipsum</p>
+              <a
+                class="mt-4 inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden rounded-lg">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 2"
+              class="aspect-video object-cover transition-all group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-primary/80 flex flex-col items-start justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <h3 class="text-2xl font-bold text-primary-foreground">Project 2</h3>
+              <p class="text-primary-foreground">A sleek and modern design system built with Figma.</p>
+              <a
+                class="mt-4 inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden rounded-lg">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 3"
+              class="aspect-video object-cover transition-all group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-primary/80 flex flex-col items-start justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <h3 class="text-2xl font-bold text-primary-foreground">Project 3</h3>
+              <p class="text-primary-foreground">A mobile-first e-commerce application built with Next.js.</p>
+              <a
+                class="mt-4 inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <div class="container px-4 md:px-6 grid gap-8 md:grid-cols-2 items-center">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
+          <p class="text-muted-foreground md:text-xl">
+            I'm a passionate software developer and designer with over 5 years of experience. I specialize in
+            building modern, responsive web applications using the latest technologies and design principles.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <h3 class="text-lg font-bold">Skills</h3>
+              <ul class="space-y-1 text-muted-foreground">
+                <li>React</li>
+                <li>Lorem ipsum</li>
+                <li>Node.js</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-lg font-bold">Experience</h3>
+              <ul class="space-y-1 text-muted-foreground">
+                <li>5+ years as a software developer</li>
+                <li>2+ years as a UI/UX designer</li>
+                <li>Worked with startups and enterprises</li>
+              </ul>
+            </div>
+          </div>
+          <a
+            class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            href="#"
+          >
+            Download Resume
+          </a>
+        </div>
+        <div class="relative">
+          <img
+            src="/placeholder.svg"
+            width="500"
+            height="500"
+            alt="John Doe"
+            class="mx-auto aspect-square overflow-hidden rounded-full object-cover"
+          />
+          <div class="absolute bottom-0 right-0 bg-primary rounded-full w-12 h-12 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6 text-primary-foreground"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="space-y-4 text-center">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+          <p class="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+            Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you as
+            soon as possible.
+          </p>
+        </div>
+        <form class="max-w-xl mx-auto mt-12 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
+              class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <textarea
+            class="flex min-h-[80px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+            placeholder="Message"
+          ></textarea>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+    <p class="text-xs text-muted-foreground">© 2024 John Doe. All rights reserved.</p>
+    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+      <a class="text-xs hover:underline underline-offset-4 text-muted-foreground" href="#">
+        Terms of Service
+      </a>
+      <a class="text-xs hover:underline underline-offset-4 text-muted-foreground" href="#">
+        Privacy Policy
+      </a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
